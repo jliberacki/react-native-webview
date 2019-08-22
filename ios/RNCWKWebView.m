@@ -229,7 +229,7 @@ static NSURLCredential* clientAuthenticationCredential;
     _webView.allowsLinkPreview = _allowsLinkPreview;
     [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
     _webView.allowsBackForwardNavigationGestures = _allowsBackForwardNavigationGestures;
-    [webView.configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
+    [_webView.configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
 
     if (_userAgent) {
       _webView.customUserAgent = _userAgent;
