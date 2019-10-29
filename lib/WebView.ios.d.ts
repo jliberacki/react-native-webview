@@ -29,10 +29,6 @@ declare class WebView extends React.Component<IOSWebViewProps, State> {
      */
     stopLoading: () => void;
     /**
-     * Request focus on WebView rendered page.
-     */
-    requestFocus: () => void;
-    /**
      * Posts a message to the web view, which will emit a `message` event.
      * Accepts one argument, `data`, which must be a string.
      *
